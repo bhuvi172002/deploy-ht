@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Bhuvi's Bakery</title>
+    <link rel="stylesheet" href="./index.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 0;
+        }
+        .contact-form {
+            
+            width: 500px;
+            margin: 50px auto;
+            padding: 40px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form h2 {
+            text-align: center;
+            color: #ffffff;
+        }
+      
+        .contact-form input, 
+        .contact-form textarea, 
+        .contact-form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: #cdaa84;
+            border: none;
+            border-radius: 4px;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #218838;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="./index.html"><li>Home</li></a>
+        <a href="./menu.html"><li>Menu</li></a>
+        <a href="./contact.html"><li>Contact us</li></a>
+      </nav>
+
+    <div class="contact-form">
+        <h2>Contact Us - Bhuvi's Bakery</h2>
+        <form>
+         
+            <input type="text" id="name"  placeholder="Your full name" required>
+
+    
+            <input type="email" id="email"  placeholder="Your email address" required>
+
+          
+            <input type="tel" id="phone"  placeholder="Your contact number" required>
+
+            
+            <textarea id="message"  rows="4" placeholder="How can we help you?" required></textarea>
+
+           
+            <select id="contact-method" >
+                <option >Email</option>
+                <option >Phone</option>
+            </select>
+
+            <label for="order-details">Order Details (if applicable)</label>
+            <textarea id="order-details" name="order-details" rows="4" placeholder="Looking to place an order? Let us know what you’d like!"></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
